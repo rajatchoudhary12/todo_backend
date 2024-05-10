@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://rajat:NXxVeEPsqYYDVNrZ@cluster0.qdscz9t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(()=>{
+mongoose.connect('mongodb+srv://rajat:NXxVeEPsqYYDVNrZ@cluster0.qdscz9t.mongodb.net/todos').then(()=>{
     console.log("connection successful")
 }).catch((err)=>console.log("no connection"))
 
